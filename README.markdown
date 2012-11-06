@@ -40,6 +40,7 @@ $ bundle
     * Here's a good article on a locally installing postgres https://devcenter.heroku.com/articles/local-postgresql.
 
 
+
 * Start the server
 
 ```terminal
