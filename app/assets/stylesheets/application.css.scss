@@ -1,3 +1,9 @@
 @import "sassyseeds/sassyseeds";
-@import "layout"; // global layout
+
+@import "layout";// global layout
+
+// views
+@import "common/header";
+
+// media queries - add last
 @import "rwd";

@@ -1,0 +1,5 @@
+#main-header {
+  @include header-style;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+}

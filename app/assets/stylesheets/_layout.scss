@@ -1,2 +1,16 @@
+//----------------------------------------
+// global layout
+
 $max-width: 1024px;
-$page-padding: 20px;
+$gutter: 20px;
+
+#container {
+  max-width: $max-width;
+  margin: 0 auto;
+  @include main-container-style;
+}
+
+#main-header, #main, #main-footer {
+  padding-right: $gutter;
+  padding-left: $gutter;
+}

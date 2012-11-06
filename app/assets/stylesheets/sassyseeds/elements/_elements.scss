@@ -24,6 +24,12 @@
   border-bottom: $bevel-dark-border;
 }//@mixin
 
+@mixin main-container-style {
+  // for max-width and fixed-width layouts
+  @include box-shadow( 0 0 10px 0 rgba(0,0,0, .7) );
+  @include border-radius( $border-radius );
+}
+
 @mixin hr-style {
   border-top: $bevel-dark-border;
   border-bottom: $bevel-light-border;
