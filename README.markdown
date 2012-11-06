@@ -53,3 +53,8 @@ If you're working on stylesheets, you'll need to have Compass running.
 ```terminal
 $ compass watch
 ```
+
+## Changing Company and Client Names ##
+
+* Open company_naming_helper.rb
+* Change the company and client names to suite your purposes.
