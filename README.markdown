@@ -12,19 +12,19 @@ A case study microsite layout.
 
 * Clone the repo
 
-    $ git clone git@github.com:matthewcopeland/bookends.git
+```$ git clone git@github.com:matthewcopeland/bookends.git```
 
 * cd into the repo
 
-    $ cd bookeneds
+```$ cd bookeneds```
 
 * Accept the .rvmrc
 
-    $ y
+```$ y```
 
 * Run the bundle commond to install
 
-    $ bundle
+```$ bundle```
 
 * Start Postgres - see https://gist.github.com/4026415 for quicky on how to do that.
 
@@ -34,9 +34,9 @@ A case study microsite layout.
 
 * Start the server
 
-    $ rails s
+```$ rails s```
 
 If you're working on stylesheets, you'll need to have Compass running.
 * Open a new terminal and start the compass watch.
 
-    $ compass watch
+```$ compass watch```
