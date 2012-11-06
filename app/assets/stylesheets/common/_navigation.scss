@@ -5,3 +5,18 @@
 
 #main-navigation, #footer-navigation {
   li { @extend %navigation-link; } }
+
+@mixin top-nav-rwd {
+  #main-navigation {
+    padding: 0;
+    li {
+      display: block;
+      text-align: left;
+      @include bevel-kill($direction:horizontal);
+      @include bevel($direction:vertical);
+
+      a {
+        &, &:first-of-type, &:last-of-type{ padding: 1ex 0 1ex 1em; } }//a
+    }//li
+  }//#main-navigation
+}//@mixin

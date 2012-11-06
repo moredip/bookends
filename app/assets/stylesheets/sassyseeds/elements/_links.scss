@@ -4,10 +4,6 @@
   &:hover { color: $link-hover-color; }
 } // @mixin link
 
-@mixin nav-link {
-  @include bevel( horizontal );
-}
-
 %navigation-link {
   display: inline-block;
   text-align: center;
@@ -17,4 +13,4 @@
   a {
     display: block;
     padding: 0 .5em; }
-}//@mixin
+}//%navigation-link

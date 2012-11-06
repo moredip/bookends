@@ -3,4 +3,6 @@
 }
 
 @media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 599px) {}
+@media only screen and (max-width: 599px) {
+  @include top-nav-rwd;
+}
