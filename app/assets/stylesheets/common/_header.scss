@@ -5,19 +5,3 @@
 
   #site-title, #site-subtitle { display: inline-block; }
 }//#main-header
-
-#main-navigation {
-  padding-left: $gutter;
-
-  li {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    @include bevel($direction:horizontal);
-    &:first-of-type a { padding-left: 0; }
-    &:last-of-type a { padding-right: 0; }
-    a {
-      display: block;
-      padding: 0 .5em; } }//li
-
-}//#main-navigation

@@ -1,5 +1,5 @@
-//----------------------------------------
-// global layout
+//-------------------------------------------
+// global layout and layout variables.
 
 $max-width: 1024px;
 $gutter: 20px;
@@ -13,4 +13,10 @@ $gutter: 20px;
 #main-header, #main, #main-footer {
   padding-right: $gutter;
   padding-left: $gutter;
+}
+
+#main {
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+  border-bottom: $bevel-dark-border;
 }

@@ -1,0 +1,7 @@
+#main-navigation {
+  padding-left: $gutter;
+  padding-bottom: $gutter;
+}//#main-navigation
+
+#main-navigation, #footer-navigation {
+  li { @extend %navigation-link; } }

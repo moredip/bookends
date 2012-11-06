@@ -24,6 +24,11 @@
   border-bottom: $bevel-dark-border;
 }//@mixin
 
+@mixin footer-style {
+  @include background( $footer-bg );
+  border-top: $bevel-light-border;
+}
+
 @mixin main-container-style {
   // for max-width and fixed-width layouts
   @include box-shadow( 0 0 10px 0 rgba(0,0,0, .7) );

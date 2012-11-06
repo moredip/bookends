@@ -15,6 +15,10 @@
   %body{id: "#{body_id}", class: "#{body_class}"}
     #container.container
       = render "common/header"
+
       #main{:role => "main"}
+        - if @pdf_download == true
+          %button.pdf-download Download PDF
         = yield
+
       = render "common/footer"

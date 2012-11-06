@@ -43,6 +43,14 @@ $header-bg-color: linear-gradient( top, $header-bg-gradient-stop-1, $header-bg-g
 $header-bg-texture: $noise;
 $header-bg: $header-bg-texture, $header-bg-color;
 
+// footer
+$footer-bg-gradient-base: $body-bg-color;
+$footer-bg-gradient-stop-1: darken($footer-bg-gradient-base, 4);
+$footer-bg-gradient-stop-2: darken($footer-bg-gradient-base, 8);
+$footer-bg-color: linear-gradient( top, $footer-bg-gradient-stop-1, $footer-bg-gradient-stop-2 );
+$footer-bg-texture: $noise;
+$footer-bg: $footer-bg-texture, $footer-bg-color;
+
 // links
 $link-color: $lightblue;
 $link-hover-color: lighten($link-color, 10);

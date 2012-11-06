@@ -1,1 +1,8 @@
 %footer#main-footer
+  %nav#footer-navigation
+    %ul
+      %li>
+        %a{href: "http://thoughtworks.com"} ThoughtWorks
+      - if client_nda != true
+        %li>
+          %a{href: "#{client_url}"}= client_name
