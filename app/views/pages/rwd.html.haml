@@ -1,11 +1,42 @@
 %article
   %h2 Responsive Design
-  = ipsum(1)
+  %p
+    At #{client_name} our aim was to create a cross-channel experience.
+    This made Responsive Web Design(rwd) a great option.
 
   %h3 Cross-channel vs multi-channel
-  = ipsum(1)
+  %p What's the difference?
+
+  %h4 Cross-channel
+  %p
+    Users should be able to accomplish a given task in a like manner across all channels.
+    For instance, a bank customer who changes their address from their desktop
+    should expect the same/similar user-flow on when visiting the site on their mobile device.
+
+  %h4 Multi-channel
+  %p
+    Users utilitze a variety products, depending on the channel through which they engage
+    with your service.  A bank app may only need a limited set of features on their mobile channel.
+
+  %h4 Why choose one over the other?
+  %p
+    It depends.
+    Introducing Experience Design. Not interface design, not visual design, Experience Design.
+    Dare we say Product Design? Service Design?
+  %p
+    What is the overall flow of a user's interaction with your service/brand?
+    How do you want to achieve it?
+    Should everything be the same? Do you want to update your profile on every device?
+    Do you want to be able to simultaneously engage with multple widgets on a single page on all devices? Sure about that?
+  %p
+    Oh yeah, budget and time can also have some small influence.
+
+  %hr
 
   %h3 Technical execution of responsive UI
+  %p
+    Talking about responsive design is one thing; executing is another.
+    This is how #{company_name} executed the rwd with #{client_name}.
 
   %h4 Stylesheet File Structure (Applied in order)
   %ul.file-tree
@@ -59,7 +90,7 @@
     The media-query mixin is then included in the rwd file as a 1-line include.
     The result was a growing, but flexible/maintainable rwd file of 1-line includes.
 
-  %h3 Javascript resize listeners (booo)
+  %h4 Javascript resize listeners (booo)
   %p
     Callbacks are expensive. How do you limit the call-backs?
     A crafty/effective solution was reached.
