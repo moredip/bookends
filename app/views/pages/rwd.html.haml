@@ -1,15 +1,14 @@
 %article
-  %h1 Responsive Design
+  %h2 Responsive Design
   = ipsum(1)
 
-  %h2 Cross-channel vs multi-channel
+  %h3 Cross-channel vs multi-channel
   = ipsum(1)
 
-  %h2 Technical execution of responsive UI
+  %h3 Technical execution of responsive UI
 
-  %h3 Stylesheet File Structure
-  %p Stylesheets are added to the main application.scss file in this order.
-  %ul
+  %h4 Stylesheet File Structure (Applied in order)
+  %ul.file-tree
     %li Base
     %li Color Palette
     %li Typography
@@ -18,41 +17,31 @@
     %li View Specific Stylesheets
     %li Media Queries
 
-  %h3 Separation of Visual and Positional Style
+  %h4 Separation of Visual and Positional Style
+
+  %h5 Visual Styles
   %p
     Visual styles are defined in the base, elements, and UI elements files.
     Their scope is controlled with the use of mixins, variables and extendable classes.
-    %br
+
+  %h5 Positional Styles
+  %p
     Positional styles are defined in view-specific stylesheets.
     Properties like height, line-height, width, gutters(padding/margin)
     are all driven by variables to keep control of the UI and allow for easy continuous design.
     One example of positional simplicity from variables:
     %a{href: "https://github.com/moredip/symbiote/blob/master/bundle/stylesheets/sass/_layout.scss"} Symbiote's Layout.
 
-  %h4 Benefits
+  %h5 Benefits
   %ul
-    %li Visual style/design can be changed on a global scale from control points.
-    %li View-specific stylesheets primarily define layout, making them more much more readable.
-    %li Enhanced readability of view-specific stylesheets enables maintainable media-query scoping in enterprise applications.
+    %li Visual style can be changed on a global scale from control points.
+    %li View-speicifc stylesheets contain simplified-markup as they primarily define only layout.
+    %li The layout is driven by variables, creating self-documenting code, increasing readabiliy and decreasing css-positional-gotchas.
+    %li If a layout-pattern needs to be reused, then that layout-pattern should be extracted into a reusable module.
+    %li Enhanced readability and decreased complexity in view-specific stylesheets enables maintainable media-query scoping in enterprise applications.
 
-  %h3 Variable Driven Stylesheets
+  %h4 Scoping Media Queries
   %p
-    Driving positional-styles from variables has great benefits.
-    Positional Properties that were consistently driven through variables:
-    Heights, Line-Heights Widths, Gutters,
-
-  %h4 Positional Properties to consistently drive through variables:
-  %ul
-    %li
-
-  %h4 Benefits
-  %ul
-    %li
-
-  %h3 Scoping Media Queries
-  %p
-    Media queries were scoped at the bottom of view-specific stylesheet.
-    This allowed the stylesheet author to keep their modifications and changes specific to that Positional layout.
-    If need arose for a Positional-layout to be used more than once, then that Positional-layout was extracted into a reusable module.
-  %h4 Example: Two-column Layout %rarr; Two-column-killer
-  %figure.placeholder
+    Media queries are scoped at the bottom of view-specific stylesheet.
+    This allows the stylesheet author to keep their modifications and changes specific to that view.
+  %h5 Example: Two-column Layout &rarr; Two-column-killer
