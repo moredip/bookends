@@ -18,6 +18,12 @@
     %li Media Queries
 
   %h4 Separation of Visual and Positional Style
+  %p
+    We tried to apply
+    %a{href:"http://thesassway.com/intermediate/a-standard-module-definition-for-sass"}
+      a standard module for sass
+    by separating out our visual and positional styles.
+    The goal was to simplify the view-specific stylesheets and make media query scoping easier and maintainable.
 
   %h5 Visual Styles
   %p
@@ -30,7 +36,8 @@
     Properties like height, line-height, width, gutters(padding/margin)
     are all driven by variables to keep control of the UI and allow for easy continuous design.
     One example of positional simplicity from variables:
-    %a{href: "https://github.com/moredip/symbiote/blob/master/bundle/stylesheets/sass/_layout.scss"} Symbiote's Layout.
+    %a{href: "https://github.com/moredip/symbiote/blob/master/bundle/stylesheets/sass/_layout.scss"}
+      Symbiote's Layout.
 
   %h5 Benefits
   %ul
@@ -44,4 +51,10 @@
   %p
     Media queries are scoped at the bottom of view-specific stylesheet.
     This allows the stylesheet author to keep their modifications and changes specific to that view.
-  %h5 Example: Two-column Layout &rarr; Two-column-killer
+    The media-query mixin is then included in the rwd file as a 1-line include.
+    The result was a growing, but flexible/maintainable rwd file of 1-line includes.
+
+  %h3 Javascript resize listeners (booo)
+  %p
+    Callbacks are expensive. How do you limit the call-backs?
+    A crafty/effective solution was reached.
