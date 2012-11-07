@@ -35,17 +35,22 @@
     Positional styles are defined in view-specific stylesheets.
     Properties like height, line-height, width, gutters(padding/margin)
     are all driven by variables to keep control of the UI and allow for easy continuous design.
-    One example of positional simplicity from variables:
-    %a{href: "https://github.com/moredip/symbiote/blob/master/bundle/stylesheets/sass/_layout.scss"}
-      Symbiote's Layout.
+    If a layout-pattern needs to be reused, then that layout-pattern should be extracted into a reusable module.
 
   %h5 Benefits
   %ul
     %li Visual style can be changed on a global scale from control points.
     %li View-speicifc stylesheets contain simplified-markup as they primarily define only layout.
     %li The layout is driven by variables, creating self-documenting code, increasing readabiliy and decreasing css-positional-gotchas.
-    %li If a layout-pattern needs to be reused, then that layout-pattern should be extracted into a reusable module.
     %li Enhanced readability and decreased complexity in view-specific stylesheets enables maintainable media-query scoping in enterprise applications.
+
+  %h5 Challenges
+  %p
+    Descipline to create seemly-trivial variables out of some heights/widths.
+    Many times these variables had no immediate purpose.
+    As the product grew, the benefits became more and more clear.
+    An open-source example of positional simplicity from seemly-trivial variables:
+    %a{href: "https://github.com/moredip/symbiote/blob/master/bundle/stylesheets/sass/_layout.scss"} Symbiote.
 
   %h4 Scoping Media Queries
   %p
