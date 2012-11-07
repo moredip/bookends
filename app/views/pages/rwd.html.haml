@@ -1,14 +1,58 @@
 %article
   %h1 Responsive Design
-
-  %p
-    What practices do we use to keep it consistent across?
+  = ipsum(1)
 
   %h2 Cross-channel vs multi-channel
-  = ipsum(2)
+  = ipsum(1)
 
   %h2 Technical execution of responsive UI
-  = ipsum(3)
 
+  %h3 Stylesheet File Structure
+  %p Stylesheets are added to the main application.scss file in this order.
+  %ul
+    %li Base
+    %li Color Palette
+    %li Typography
+    %li Elements
+    %li UI Elements
+    %li View Specific Stylesheets
+    %li Media Queries
+
+  %h3 Separation of Visual and Positional Style
+  %p
+    Visual styles are defined in the base, elements, and UI elements files.
+    Their scope is controlled with the use of mixins, variables and extendable classes.
+    %br
+    Positional styles are defined in view-specific stylesheets.
+    Properties like height, line-height, width, gutters(padding/margin)
+    are all driven by variables to keep control of the UI and allow for easy continuous design.
+    One example of positional simplicity from variables:
+    %a{href: "https://github.com/moredip/symbiote/blob/master/bundle/stylesheets/sass/_layout.scss"} Symbiote's Layout.
+
+  %h4 Benefits
+  %ul
+    %li Visual style/design can be changed on a global scale from control points.
+    %li View-specific stylesheets primarily define layout, making them more much more readable.
+    %li Enhanced readability of view-specific stylesheets enables maintainable media-query scoping in enterprise applications.
+
+  %h3 Variable Driven Stylesheets
+  %p
+    Driving positional-styles from variables has great benefits.
+    Positional Properties that were consistently driven through variables:
+    Heights, Line-Heights Widths, Gutters,
+
+  %h4 Positional Properties to consistently drive through variables:
+  %ul
+    %li
+
+  %h4 Benefits
+  %ul
+    %li
+
+  %h3 Scoping Media Queries
+  %p
+    Media queries were scoped at the bottom of view-specific stylesheet.
+    This allowed the stylesheet author to keep their modifications and changes specific to that Positional layout.
+    If need arose for a Positional-layout to be used more than once, then that Positional-layout was extracted into a reusable module.
+  %h4 Example: Two-column Layout %rarr; Two-column-killer
   %figure.placeholder
-
