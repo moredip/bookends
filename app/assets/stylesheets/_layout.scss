@@ -19,8 +19,13 @@ $gutter: 20px;
   padding-top: $gutter;
   padding-bottom: $gutter;
   border-bottom: $bevel-dark-border;
-  ul { padding-bottom: $gutter; }
-}
+  ul {
+    padding-bottom: $gutter;
+    li ul {
+      padding-left: $gutter;
+      padding-bottom: $gutter/2; }//liul
+  }//ul
+}//#main
 
 p { padding-bottom: $gutter; }
 
