@@ -45,10 +45,21 @@
 @mixin em-style { font-style: $em-font-style; }
 @mixin strong-style { font-weight: $bold; }
 
-$blockquote-padding: 20px 10px;
+$blockquote-padding-vertical: 20px;
+$blockquote-paddding-horizontal: 10px;
+$blockquote-padding: $blockquote-padding-vertical $blockquote-paddding-horizontal;
 @mixin blockquote-style {
   padding: $blockquote-padding;
-  &:before, &:after { content: " \"\ "; }
+  background: $blockquote-bg;
+  font-style: $blockquote-font-style;
+  @include box-shadow(0 1px 4px 0 rgba(0,0,0, .4) );
+  @include border-radius( 20px 3px 20px 3px );
+  @extend h2;
+
+  .quote-author {
+    display: block;
+    font-style: normal;
+    @extend h6; }
 }//@mixin
 
 @mixin selection-pseudo-style {
