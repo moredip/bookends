@@ -1,0 +1,30 @@
+$story-board-height: 150px;
+#home-page {
+
+  .story-board li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1ex 0 0 .5em;
+    width: 25%;
+    height: $story-board-height;
+    @include bevel(horizontal);
+    text-align: center;
+    background: rgba(0,0,0,.1);//temp
+    //-----------------------------
+    // placeholder
+    &:after {
+      content: "[image]";
+      text-align: center;
+      position: absolute;
+      display: block;
+      @include fill;
+      line-height: $story-board-height;
+    }//&:after
+    //-----------------------------
+
+  }//.story-board li
+
+  .punch-line { @extend h3; }
+
+}//#home-page
