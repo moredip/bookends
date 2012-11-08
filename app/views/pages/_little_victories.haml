@@ -1,0 +1,136 @@
+%article#little-victories
+  %h2 Little Victories in Continuous Design: Refine It Once.
+  %p By Coleman Collins, Thoughts XD | Visual Design
+  %p
+    One of the phenomenal things about the in-house design team that we worked with during our time at
+    #{client_name} NY is their eye for detail.
+    When Emily, Lori and I showed up on the first day (with Linda in tow),
+    we were presented with a website UI and a few sample pages that were, in a word, gorgeous.
+    The #{client_name} team, mostly trained as print designers,
+    had nudged and tweaked and refined these elements and pages into elegant, exacting perfection.
+  %p
+    Unfortunately, pretty pictures do not make a website.
+    This great work apparently only existed as photoshop comps,
+    and no one in New York knew what had or had not made it into the website the Palo Alto team had been building for a month or so,
+    or if it made it in correctly.
+  %p= image_tag("little_victories/debrief_fig_1.jpg")
+
+  %p
+    Faced with a large design backlog a tight time deadline,
+    the central worry of the New York arm of the project became clear:
+    How do we facilitate getting all of the design that already exists,
+    as well as all the design we're going to produce, into a live-code end product that lives up to the #{client_name} team's exacting visual standard?
+    No small feat in any amount of time, we only had two months (give or take) to make it happen.
+    In thoughtworker fashion, we began looking for ways to save time without cutting corners.
+  %p
+    The most obvious thing that stuck out as a time vacuum was the refinement process they were using — create in photoshop,
+    show it to lead designer/creative director for feedback, receive feedback,
+    use feedback to refine your comp, re-feeback, refine, re-feedback, refine until sign-off is achieved. 
+  %p
+    Granted, the #{client_name} team had been 'agile trained' in the recent past
+    (a phrase that means any number of things,
+    but here meant short feedback loops on the span of every 1-2 hours,
+    and a preference for face-to-face feedback and live refinement to lists of comments),
+    so this was a sort of best-case feedback loop situation.
+
+  %p= image_tag("little_victories/debrief_fig_2.jpg")
+
+  %p
+    When done well, this kind of feedback loop is a fairly common system in the design world that works well-ish if that final sign-off is the end of the process.
+    This would be the case, for example, with a print advertisement. Too bad we were making a website.
+  %p
+    Once the photoshop comp was perfect,
+    we needed to translate it into code. Because such translation is always an imperfect process
+    (turns out, multiply mode does not exist in CSS),
+    it means more steps now exist between first idea and final implementation.
+  %p
+    In the best case, it necessitates a second round of feedback,
+    in our case involving the front-end-dev team in Palo Alto.
+    Our extra loop was transcontinental, and pace slowed accordingly.
+
+  %p= image_tag("little_victories/debrief_fig_3.jpg")
+
+  %p
+    In a worse case, bringing it into code meant finding things that were unconsidered in the initial design
+    (crazy, that things like interaction and hover states can get overlooked when designing in a single static picture, but I won't get into that)
+    and we would be asked to go back into photoshop to mock up a new element or piece of the puzzle.
+    Cue another loop of indeterminate length.
+
+  %p
+    Okay, a quick digression, even though I JUST said I wouldn't.
+    I advocate designing in the lowest-fidelity medium that gets the point across for that stage of the design.
+    Always. Photoshop is great for coming up with the final polish on a piece of software, but why start with it?
+    In our case, there was a sad but good reason: we couldn't get our point across in any other medium.
+    Photoshop was the language they spoke at #{client_name}, so we had no other choice but to speak it too.
+
+  %p
+    Well, at least until we were around long enough to begin teaching them some new vocabulary. I'm getting to that.
+
+  %p= image_tag("little_victories/debrief_fig_4.jpg")
+
+  %p
+    Seriously, though. LOTS of different feedback loops, each of which takes time,
+    and involves a different set of people with different schedules.
+    Lots of inefficiencies. We still only had two months.
+  %p
+    There are basically two ways to fix a loops problem: chop them out (i.e. remove steps),
+    or make the loops so small and regular that they're indistinguishable from a straight line at a distance (i.e. pairing).
+    We ended up doing some of both.
+  %p
+    Matt Copeland, ever the excellent facilitator, proposed we start small.
+    Just have some sessions where we sat with the design team and looked at the live site as it existed,
+    and tweak global styling things as they came up.
+    No initial goals outside of one central tenet of continuous/iterative design improvement:
+    leave the product better than we found it.
+  %p
+    It's amazing what happens when you simply trust someone's desire to improve a product they're invested in.
+    Instead of worrying about its unfinished state,
+    or simply asking "why doesn't it look right,"
+    the #{client_name} design team jumped into fix-it mode.
+    Instead of criticisms, they offered solutions.
+  %p
+    We made these sessions into a daily occurrence.
+  %p
+    At least for the first few, we had the entire NY #{client_name} + #{company_name} design team in attendance for the sessions,
+    which fostered a second happy efficiency:
+    this 30ish minutes in the afternoon was sometimes the only time reserved just for conversation in an otherwise heads-down day.
+  %p
+    On top of skipping the back-to-photoshop part of the 'solutions to new problems we didn't see in photoshop' loop,
+    we had accidentally invented standups for the New York design team.
+    These side conversations that occurred while the sessions were happening themselves helped grease a lot of sticky decision-making and feedback pathways.
+
+  %p= image_tag("little_victories/debrief_fig_5.jpg")
+
+  %p
+    Improvements, refinements, and decisions were getting made. People were talking.
+    The big-group sessions fell away as they stopped being as necessary,
+    but the communication and problem-solving and the looking at the live site was a bit more persistent.
+    Little victories in continuous design, beginning to accumulate into a lot of value for the client.
+  %p
+    Then something really cool happened: I got an e-mail from the #{client_name} NY lead designer.
+    Well, that wasn't' the cool part.
+    The cool part is what the e-mail said.
+  %p
+    In short, there had been a decision to change some global styling.
+    Nothing major, just trying to tighten a few things up.
+    And the creative director asked if I could work with the lead designer and Matt to update the site.
+    Not to work up a comp, to figure it out in code.
+    Not to update the photoshop style guide, to update the site.
+  %p
+    So that afternoon, we sat down, and we made our changes over a Skype chat and some in-browser code fiddling.
+    After some "no let's try this instead" and some "how about this,"the changes were made.
+    And since the lead designer was helping make them, and Matt was implementing them in live code,
+    they were signed off and in the product minutes later.
+    We designed it once, refined it once, and implemented it once.
+    And at the end of the session, the product — not documentation, not plans, not a comp,
+    but the product itself was better than we found it.
+  %p
+    I wish I could say that from that day forth, the whole mindset changed and we continued moving in that direction,
+    moving towards a perfect iterative improvement model, but we didn't. 
+    This wasn't some groundbreaking shift or a bellweather moment (although it did happen a few more times).
+    A lot of things continued to be imperfect about the way we did things.
+    The side-by-sides at #{client_name} were just a single instance of the team trying a new way of doing things that might work a little better.
+    A little victory for Experience Design and efficient process in a project and an office that continued and continues to be far from truly agile. 
+    But, we
+    %em did
+    leave that office some minuscule amount better than we found it. And that's the goal.
