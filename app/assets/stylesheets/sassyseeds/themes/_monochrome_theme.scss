@@ -52,8 +52,8 @@ $footer-bg-texture: $noise;
 $footer-bg: $footer-bg-texture, $footer-bg-color;
 
 // links
-$link-color: $lightblue;
-$link-hover-color: lighten($link-color, 10);
+$link-color: $darkblue;
+$link-hover-color: lighten($link-color, 15);
 
 // global border-radius for buttons and forms
 $border-radius: 4px;

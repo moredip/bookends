@@ -33,12 +33,23 @@
   %h2 What made us successful:
   %ul
     %li Great partnership between the #{company_name} and #{client_name} teams.
-    %li Responsive Web Design - massively reduced effort to target multiple platforms and form-factors. #{client_name}[dot]com is one of the first major e-commerce sites to showcase this approach.
-    %li Continuous Delivery - heavy use of automation for both testing and infrastructure  provisioning meant that production releases were low-stress events.
-    %li Design collaboration - daily remote video-based "side-by-sides" helped bring the design team our of photoshop and into the browser.
-    %li Lean MVP approach - built a thin "walking skeleton" of the whole application in the first week to prove out the key technologies and integrations. This raised confidence levels and then allowed the team to work in parallel on fleshing out key areas of the site.
+    %li Knowledge sharing - #{client_name} had domain knowledge. #{company_name} had agile-practice &amp; technical knowledge.
     %li Rapid training - a mixture of pair-programming and regular "lunch n learn" sharing sessions got the whole team up to speed very quickly.
-    %li Evolutionary architecture - applied various techniques to defer key architectural decisions until dependency timelines and product priorities became clearer. (VCR, Feature-flagging, Fake CMS, etc)
+    %li
+      = link_to "Lean MVP approach - ", :walking_skeleton
+      built a thin "walking skeleton" of the whole application in the first week to prove out the key technologies and integrations. This raised confidence levels and then allowed the team to work in parallel on fleshing out key areas of the site.
+    %li
+      = link_to "Continuous Delivery - ", :continous_delivery
+      heavy use of automation for both testing and infrastructure  provisioning meant that production releases were low-stress events.
+    %li
+      = link_to "Evolutionary architecture - ", :architecture
+      applied various techniques to defer key architectural decisions until dependency timelines and product priorities became clearer. (VCR, Feature-flagging, Fake CMS, etc)
+    %li
+      = link_to "Responsive Web Design - ", :rwd
+      massively reduced effort to target multiple platforms and form-factors. #{client_name}[dot]com is one of the first major e-commerce sites to showcase this approach.
+    %li
+      = link_to "Design collaboration - ", :design_collaboration
+      daily remote video-based "side-by-sides" helped bring the design team our of photoshop and into the browser.
 
   %hr
 
